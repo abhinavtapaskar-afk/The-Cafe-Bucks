@@ -115,7 +115,14 @@ function sendWhatsAppOrder() {
     });
 
     message += `%0A💰 *Grand Total: ₹${total}*`;
-    message += `%0A%0A📍 *LOCATION:* _Share your live location below for MGM Hostel delivery!_`;
+    
+    // Your specific Delivery Policy
+  message += `%0A%0A🚚 *DELIVERY INFO:*%0A_Free delivery within 2km (MGM Area)._%0A_Small charge apply for long distances._`;
+  
+  // Your specific Smart Location Instructions
+  message += `%0A%0A📍 *SHARE LOCATION:*%0A_Please tap ( 📎 ) or ( ➕ ) and share your "Live Location" so we can deliver to your doorstep!_`;
+
+  message += `%0A%0A💬 Please confirm my order!`;
 
     window.open(`https://wa.me/918888682686?text=${message}`, "_blank");
 }
