@@ -128,14 +128,18 @@ function sendWhatsAppOrder() {
 }
 
 function sendBookingRequest() {
-    let msg = `✨ *VIP SUITE INQUIRY - CAFE BUCKS* ✨%0A%0A`;
-    msg += `I want to check availability for the private lounge!%0A%0A`;
-     bookingMessage += `🎈 *Event:* [Birthday / Anniversary / Friends Meet]%0A`;
+    // Your official Cafe Bucks number
+    const phoneNumber = "918888682686"; 
+    
+    let bookingMessage = `✨ *VIP SUITE INQUIRY - THE CAFE BUCKS* ✨%0A%0A`;
+    bookingMessage += `I want to check availability for a special celebration!%0A%0A`;
+    bookingMessage += `🎈 *Event:* [Birthday / Anniversary / Friends Meet]%0A`;
     bookingMessage += `👥 *Group Size:* [e.g. 6 People]%0A`;
     bookingMessage += `📅 *Preferred Date:* [Enter Date]%0A`;
     bookingMessage += `🕒 *Preferred Time:* [Enter Time]%0A%0A`;
     bookingMessage += `🎊 _Does this slot have availability for decoration?_%0A%0A`;
     bookingMessage += `Please confirm so I can finalize my plans! 🙏`;
-    
-    window.open(`https://wa.me/918888682686?text=${msg}`, "_blank");
+
+    const url = `https://wa.me/${phoneNumber}?text=${bookingMessage}`;
+    window.open(url, '_blank');
 }
