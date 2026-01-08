@@ -1,3 +1,4 @@
+console.log("Menu Data Found:", menuData);
 let cart = {};
 
 document.addEventListener('DOMContentLoaded', () => {
