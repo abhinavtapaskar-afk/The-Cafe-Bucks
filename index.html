@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Cafe Bucks | Digital Menu</title>
+    <title>The Cafe Bucks | MGM Nanded</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -13,18 +13,21 @@
         <div class="hero-content">
             <h1>THE CAFE BUCKS</h1>
             <p>Premium Coffee & VIP Celebration Lounge</p>
-            <div class="badge">📍 Front of MGM College, Nanded</div>
+            <div class="mgm-badge">📍 Front of MGM College, Nanded</div>
+            
+            <div class="quick-actions">
+                <a href="tel:+918888682686" class="action-btn">📞 Call Now</a>
+                <a href="https://www.google.com/maps/search/?api=1&query=The+Cafe+Bucks+Nanded" target="_blank" class="action-btn">📍 Open Maps</a>
+            </div>
         </div>
     </header>
 
     <nav class="category-nav">
-        <div id="category-list" class="category-container">
-            </div>
+        <div id="category-list" class="category-container"></div>
     </nav>
 
     <main class="menu-section">
-        <div id="menu-grid" class="menu-grid">
-            </div>
+        <div id="menu-grid" class="menu-grid"></div>
     </main>
 
     <section class="vip-section">
@@ -42,12 +45,10 @@
             <span class="divider">|</span>
             <span id="cart-total">₹0</span>
         </div>
-        <button class="whatsapp-btn" onclick="sendWhatsAppOrder()">
-            Send Order 📲
-        </button>
+        <button class="whatsapp-btn" onclick="sendWhatsAppOrder()">Order via WhatsApp 📲</button>
     </div>
 
-    <script src="js/menuData.js"></script>
-    <script src="js/main.js"></script>
+    <script src="menuData.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
