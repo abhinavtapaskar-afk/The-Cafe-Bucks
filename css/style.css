@@ -1,70 +1,36 @@
 :root {
-    --primary: #1e3932; /* Starbucks Green */
-    --accent: #cba258;  /* Gold */
+    --primary: #1e3932;
+    --accent: #cba258;
     --bg: #fdfdfd;
-    --card: #ffffff;
-    --text: #121212;
+    --white: #ffffff;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
-body { background: var(--bg); color: var(--text); padding-bottom: 100px; }
+body { background: var(--bg); padding-bottom: 120px; }
 
-/* Hero */
-.hero {
-    height: 220px; background: var(--primary); color: var(--accent);
-    display: flex; align-items: center; justify-content: center; text-align: center;
-}
-.hero h1 { font-size: 2.2rem; font-weight: 700; margin-bottom: 5px; }
+.hero { padding: 40px 20px; background: var(--primary); color: var(--accent); text-align: center; border-bottom: 5px solid var(--accent); }
+.hero h1 { font-size: 2.2rem; font-weight: 700; letter-spacing: 1px; }
+.mgm-badge { background: rgba(255,255,255,0.1); display: inline-block; padding: 5px 15px; border-radius: 20px; font-size: 0.8rem; margin: 10px 0; border: 1px solid var(--accent); }
 
-/* Sticky Nav */
-.category-nav {
-    position: sticky; top: 0; background: var(--white); z-index: 100;
-    padding: 15px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-.category-container { display: flex; overflow-x: auto; padding: 0 15px; gap: 10px; }
-.category-btn {
-    padding: 8px 18px; border-radius: 20px; border: 1.5px solid var(--primary);
-    background: transparent; color: var(--primary); font-weight: 600; cursor: pointer;
-}
+.quick-actions { display: flex; justify-content: center; gap: 10px; margin-top: 15px; }
+.action-btn { text-decoration: none; color: var(--primary); background: var(--accent); padding: 10px 20px; border-radius: 8px; font-size: 0.9rem; font-weight: 700; transition: 0.3s; }
+.action-btn:active { transform: scale(0.95); }
+
+.category-nav { position: sticky; top: 0; background: var(--white); z-index: 100; padding: 15px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+.category-container { display: flex; overflow-x: auto; padding: 0 15px; gap: 10px; scrollbar-width: none; }
+.category-btn { padding: 8px 18px; border-radius: 20px; border: 1.5px solid var(--primary); background: transparent; color: var(--primary); font-weight: 600; white-space: nowrap; cursor: pointer; }
 .category-btn.active { background: var(--primary); color: var(--accent); }
 
-/* Menu Grid */
-.menu-grid {
-    display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-    gap: 15px; padding: 20px;
-}
-.menu-card {
-    background: var(--card); border-radius: 15px; padding: 15px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05); text-align: center;
-}
+.menu-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 15px; padding: 20px; }
+.menu-card { background: var(--white); border-radius: 15px; padding: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); text-align: center; border: 1px solid #eee; }
 .price { color: var(--primary); font-weight: 700; font-size: 1.1rem; margin: 10px 0; }
 
-/* Controls */
-.qty-btn {
-    background: var(--primary); color: var(--accent); border: none;
-    width: 30px; height: 30px; border-radius: 50%; font-size: 1.2rem;
-}
+.qty-btn { background: var(--primary); color: var(--accent); border: none; width: 35px; height: 35px; border-radius: 50%; font-size: 1.2rem; cursor: pointer; }
 
-/* VIP Section */
-.vip-section {
-    margin: 20px; padding: 25px; border-radius: 20px;
-    background: var(--primary); color: white; text-align: center;
-}
+.vip-section { margin: 20px; padding: 25px; border-radius: 20px; background: var(--primary); color: white; text-align: center; border: 2px dashed var(--accent); }
 .booking-options { display: flex; justify-content: center; gap: 10px; margin-top: 15px; }
-.booking-options button {
-    background: var(--accent); border: none; padding: 10px 15px;
-    border-radius: 10px; font-weight: 700; color: var(--primary);
-}
+.booking-options button { background: var(--accent); border: none; padding: 12px 20px; border-radius: 10px; font-weight: 700; color: var(--primary); cursor: pointer; }
 
-/* Floating Cart */
-.cart-bar {
-    position: fixed; bottom: 15px; left: 50%; transform: translateX(-50%);
-    width: 92%; background: var(--primary); border-radius: 50px;
-    padding: 15px 25px; display: flex; justify-content: space-between; align-items: center;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.3); z-index: 1000;
-}
+.cart-bar { position: fixed; bottom: 15px; left: 50%; transform: translateX(-50%); width: 92%; background: var(--primary); border-radius: 50px; padding: 15px 25px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 8px 24px rgba(0,0,0,0.3); z-index: 1000; border: 1px solid var(--accent); }
 .hidden { display: none; }
-.whatsapp-btn {
-    background: var(--accent); color: var(--primary); border: none;
-    padding: 8px 18px; border-radius: 25px; font-weight: 800;
-}
+.whatsapp-btn { background: var(--accent); color: var(--primary); border: none; padding: 10px 20px; border-radius: 25px; font-weight: 800; cursor: pointer; }
