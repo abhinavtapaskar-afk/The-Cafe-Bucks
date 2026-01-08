@@ -136,5 +136,6 @@ function sendBookingRequest() {
     bookingMessage += `🕒 *Preferred Time:* [Enter Time]%0A%0A`;
     bookingMessage += `🎊 _Does this slot have availability for decoration?_%0A%0A`;
     bookingMessage += `Please confirm so I can finalize my plans! 🙏`;
+    
     window.open(`https://wa.me/918888682686?text=${msg}`, "_blank");
 }
