@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cafe Bucks | Digital Menu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>THE CAFE BUCKS</h1>
+            <p>Premium Coffee & VIP Celebration Lounge</p>
+            <div class="badge">📍 Front of MGM College, Nanded</div>
+        </div>
+    </header>
+
+    <nav class="category-nav">
+        <div id="category-list" class="category-container">
+            </div>
+    </nav>
+
+    <main class="menu-section">
+        <div id="menu-grid" class="menu-grid">
+            </div>
+    </main>
+
+    <section class="vip-section">
+        <h3>🎉 VIP Birthday Suite</h3>
+        <p>Book our private room for your special day</p>
+        <div class="booking-options">
+            <button onclick="bookVIP('1 Hour')">1 Hour Slot</button>
+            <button onclick="bookVIP('2 Hours')">2 Hour Slot</button>
+        </div>
+    </section>
+
+    <div id="cart-bar" class="cart-bar hidden">
+        <div class="cart-details">
+            <span id="item-count">0 Items</span>
+            <span class="divider">|</span>
+            <span id="cart-total">₹0</span>
+        </div>
+        <button class="whatsapp-btn" onclick="sendWhatsAppOrder()">
+            Send Order 📲
+        </button>
+    </div>
+
+    <script src="js/menuData.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
