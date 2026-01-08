@@ -1,92 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>The Cafe Bucks | Premium Coffee & Lounge</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>The Cafe Bucks | MGM Nanded</title>
 
-  <meta name="description" content="The Cafe Bucks – Premium coffee and VIP celebration lounge in front of MGM College, Nanded." />
-  <meta name="keywords" content="Cafe Bucks, MGM Nanded Cafe, Coffee Shop Nanded, Birthday Celebration Nanded" />
+    <meta name="description" content="The Cafe Bucks – Premium coffee and VIP celebration lounge near MGM College, Nanded." />
 
-  <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css" />
 
-  <script defer src="menuData.js"></script>
-  <script defer src="main.js"></script>
+    <script defer src="menuData.js"></script>
+    <script defer src="main.js"></script>
 </head>
 
 <body>
 
 <header class="header">
-  <h1 class="logo">The Cafe Bucks</h1>
-  <p class="tagline">Premium Roast • VIP Lounge • MGM Nanded</p>
-  <div class="delivery-badge">
-    🛵 Free Delivery within 1km of MGM
-  </div>
+    <h1 class="logo">THE CAFE BUCKS</h1>
+    <p class="tagline">Premium Roast • VIP Lounge • MGM Nanded</p>
+    <div class="delivery-badge">🛵 Free Delivery to MGM Hostels</div>
 </header>
 
 <section class="categories">
-  <div id="categoryContainer"></div>
+    <div id="categoryContainer"></div>
 </section>
 
 <section class="menu">
-  <div id="menuContainer"></div>
+    <div id="menuContainer"></div>
 </section>
 
 <section class="cart">
-  <h2>Your Order</h2>
-  <div id="cartItems"></div>
-  <div class="cart-footer">
-    <span>Total:</span>
-    <strong id="totalPrice">₹0</strong>
-  </div>
-  <button class="order-btn" onclick="sendWhatsAppOrder()">Order on WhatsApp</button>
-  <p class="cart-note">📍 Share location on WhatsApp for doorstep delivery</p>
+    <h2>Your Order</h2>
+    <div id="cartItems"></div>
+    <div class="cart-footer">
+        <span>Total:</span>
+        <strong id="totalPrice">₹0</strong>
+    </div>
+    <button class="order-btn" onclick="sendWhatsAppOrder()">Order on WhatsApp</button>
+    <p class="cart-note">📍 Share location on WhatsApp after ordering</p>
 </section>
 
 <section class="booking">
-  <h2>VIP Celebration Suite 🎉</h2>
-  <p class="booking-desc">
-    Premium Private Room for Birthdays & Anniversaries
-    <br/>Location: Front of MGM College, Nanded
-  </p>
+    <h2>VIP Celebration Suite 🎉</h2>
+    <p class="booking-desc">
+        Private room for Birthdays & Special Moments.
+        <br/>Location: Front of MGM College, Nanded
+    </p>
 
-  <div class="booking-cards">
-    <div class="booking-card">🎂 Birthday</div>
-    <div class="booking-card">👑 Aniversary</div>
-    <div class="booking-card">📸 Freinds meet </div>
-  </div>
+    <div class="booking-cards">
+        <div class="booking-card">🎂 Birthday</div>
+        <div class="booking-card">💍 Anniversary</div>
+        <div class="booking-card">👥 Friends Meet</div>
+    </div>
 
-  <button class="booking-btn" onclick="sendBookingRequest()">
-    Check Availability
-  </button>
+    <button class="booking-btn" onclick="sendBookingRequest()">
+        Enquire for VIP Slot
+    </button>
 </section>
 
 <section id="about" class="about-section">
-    <span class="sub-title">The Bucks Vision</span>
-    <h2 style="color: var(--primary); font-size: 2rem; margin: 15px 0;">Brewing Excellence at MGM</h2>
-    <div style="max-width: 600px; margin: 0 auto; color: #555;">
-        <p>Located right in front of MGM College, <strong>The Cafe Bucks</strong> is the go-to sanctuary for students and coffee lovers in Nanded.</p>
-        <p class="highlight-box">
-            Premium ingredients, VIP vibes, and a commitment to hygiene—welcome to the family.
-        </p>
+    <div class="about-container">
+        <span class="sub-title">Our Vision</span>
+        <h2 class="about-title">Brewing Excellence at MGM</h2>
+        <div class="about-content">
+            <p>At <strong>The Cafe Bucks</strong>, we don't just serve coffee; we craft experiences. Located in the heart of Nanded's education hub, we provide a premium sanctuary for students and coffee connoisseurs alike.</p>
+            <p class="highlight-quote">
+                Quality ingredients, superior hygiene, and a vibe that fuels your ambition. <br>
+                <span>Welcome to The Cafe Bucks family.</span>
+            </p>
+        </div>
     </div>
 </section>
 
 <section class="visit">
-  <h2>Visit Us 📍</h2>
-  <p>Front of MGM College, Airport Road, Nanded</p>
-  <p class="open-time">Open: 10:00 AM – 11:00 PM</p>
+    <h2>Visit Us 📍</h2>
+    <p>Airport Road, Front of MGM College, Nanded</p>
+    <p class="status-text">Open: 10:00 AM – 11:00 PM</p>
 
-  <div class="visit-buttons">
-    <a href="tel:918888682686" class="call-btn">Call Now</a>
-    <a href="https://maps.app.goo.gl/58HG+HV" target="_blank" class="map-btn">Open Maps</a>
-  </div>
+    <div class="visit-buttons">
+        <a href="tel:+918888682686" class="call-btn">Call Now</a>
+        <a href="https://maps.app.goo.gl/YourGoogleMapsLink" target="_blank" class="map-btn">Open Maps</a>
+    </div>
 </section>
 
 <footer class="footer">
     <p>© 2026 THE CAFE BUCKS. ALL RIGHTS RESERVED.</p>
-    <p class="privacy">🛡️ SECURE ORDERING • MGM NANDED PRIDE</p>
-    <p class="dev">CRAFTED FOR COFFEE LOVERS</p>
+    <p class="footer-sub">DEVELOPED IN NANDED | SECURE WHATSAPP ORDERING</p>
 </footer>
 
 </body>
